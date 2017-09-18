@@ -2,24 +2,25 @@ package privateinterface;
 
 public interface Person {
 	default public void greet() {
-		doGreet(null, null);
+		executeGreeting("Hi", null);
 	}
 
 	default public void greet(String name) {
-		doGreet(name, null);
+		executeGreeting("Hi", name);
 	}
 
-	default public void greet(String name, String city) {
-		doGreet(name, city);
+	default public void greetFormal() {
+		executeGreeting("Good afternoon", null);
 	}
 
-	private void doGreet(String name, String city) {
+	default public void greetFormal(String name) {
+		executeGreeting("Good afternoon", name);
+	}
+
+	private void executeGreeting(String salutation, String name) {
 		StringBuilder sb = new StringBuilder();
-		sb.append("Hi");
-		sb.append(name != null ? " " + name : "");
-		sb.append(city != null && name == null ? " to " + city : "");
-		sb.append(city != null && name != null ? " from " + city : "");
-		sb.append(".");
+		sb.append(salutation).append("! ").append("Nice to meet you").append(name != null ? ", " + name : "")
+				.append("!");
 		System.out.println(sb.toString());
 	}
 }
