@@ -1,11 +1,17 @@
-package factorymethods;
+package collection;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class FactoryMethodsDemo {
+/**
+ * Shows the new feature for initializing unmodifiable
+ * collection with a factory method
+ * 
+ * @author ARU
+ */
+public class CollectionDemo {
 
 	public static void main(String[] args) {
 		// pre Java 9 array
@@ -22,9 +28,8 @@ public class FactoryMethodsDemo {
 		carsList2 = Collections.unmodifiableList(carsList2);
 		System.out.println(carsList2);
 
-		// Java 9 list
+		// Java 9 list with factory method
 		List<String> carsList3 = List.of("VW", "Audi", "Porsche");
 		System.out.println(carsList3);
 	}
-
 }

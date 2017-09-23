@@ -1,5 +1,11 @@
 package privateinterface;
 
+/**
+ * Interface having Java 8 default methods and a Java 9 private methods used by
+ * default methods
+ * 
+ * @author ARU
+ */
 public interface Person {
 	default public void greet() {
 		executeGreeting("Hi", null);
