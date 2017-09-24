@@ -1,4 +1,4 @@
-package privateinterface;
+package chapter7;
 
 /**
  * Uses 2 interfaces which use the new feature for private interface methods

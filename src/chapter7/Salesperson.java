@@ -1,4 +1,4 @@
-package privateinterface;
+package chapter7;
 
 /**
  * Implementation of interface with default methods, overriding one of the

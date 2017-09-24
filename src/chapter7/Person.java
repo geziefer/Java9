@@ -1,4 +1,4 @@
-package privateinterface;
+package chapter7;
 
 /**
  * Interface having Java 8 default methods and a Java 9 private methods used by

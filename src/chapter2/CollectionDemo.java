@@ -1,4 +1,4 @@
-package collection;
+package chapter2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,8 +6,8 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Shows the new feature for initializing unmodifiable
- * collection with a factory method
+ * Shows the new feature for initializing unmodifiable collection with a factory
+ * method
  * 
  * @author ARU
  */
