@@ -32,6 +32,7 @@ public class ProcessDemo {
 		p.onExit().thenAccept(ps -> System.out.println("Process " + ps.pid() + " killed"));
 		Thread.sleep(2000);
 		System.out.println("\nDuration: " + info.totalCpuDuration().orElse(Duration.ofMillis(0)));
+		System.out.println("Kill process " + p.pid());
 		p.destroy();
 		Thread.sleep(2000);
 	}

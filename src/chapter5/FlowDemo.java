@@ -49,7 +49,7 @@ class MySubscriber<T> implements Subscriber<T> {
 	public void onSubscribe(Subscription subscription) {
 		// initialize subscription
 		this.subscription = subscription;
-		subscription.request(2);
+		subscription.request(1);
 	}
 
 	@Override
@@ -60,7 +60,7 @@ class MySubscriber<T> implements Subscriber<T> {
 			Thread.sleep(250);
 		} catch (InterruptedException e) {
 		}
-		subscription.request(2);
+		subscription.request(1);
 	}
 
 	@Override

@@ -31,7 +31,7 @@ public class WalkerDemo {
 		Arrays.stream(stackTrace).forEach(f -> System.out.println(f.getMethodName() + ":" + f.getLineNumber()));
 		System.out.println();
 
-		// Java 9 way to walk thhrough stack frames
+		// Java 9 way to walk through stack frames
 		StackWalker sw = StackWalker.getInstance();
 		List<StackWalker.StackFrame> frames = sw.walk(f -> f.collect(Collectors.toList()));
 		frames.forEach(f -> System.out.println(f.getMethodName() + ":" + f.getLineNumber()));
